@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Doctype informa ao agente de usuario a versão html -->
+<html lang="pt-br">
+    <head>
+        <title> Documento </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Eduardo Roque">
+        <meta name="description" content="Criptografia">
+        <meta name="keyworlds" content="HTML5, CSS, JS">
+<!--..............................................................-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--..............................................................-->
+        <link rel="stylesheet" href="cpt.css">
+    </head>
+    <body>
+        <h1>Código Secreto</h1>
+        <main class="main">
+            <section class="form box">
+              <form id="criptografia" action="">
+                <h2 class="po"><label for="input-texto">Apenas letras minúsculas, sem acento</label></h2>
+                <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
+                <input class="btn" type="button" value="CRIPTOGRAFAR!" id="btn-cripto">
+                <input class="btn" type="button" value="DESCRIPTOGRAFAR!" id="btn-descripto">
+                <input class="btn" type="button" value="LIMPAR" id="btn-clean">
+              </form>
+            </section>
+<!--...............................................................-->
+            <section class="msg box">
+              <form id="mensagem" action="">
+                <h2 class="xd">Mensagem criptografada:</h2>
+                <input class="text-input" type="text" id="msg"></input>
+                <input class="btn" type="button" value="COPIAR" id="btn-copy">
+              </form>
+            </section>
+          </main>
+    </body>
+<!--...............................................................-->
+    <script src="scripts.js"></script>
+</html>

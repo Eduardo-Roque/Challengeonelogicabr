@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* O body abaixo é o corpo inteiro do projeto (fonte, cor das palavras e cor de fundo azul-gradiente)*/
+  body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-image: linear-gradient(45deg,black, rgb(22, 131, 255));
+  }
+  /* O h1 abaixo é o titulo Criptografia */
+  h1{
+    background-image: linear-gradient(45deg, rgba(0, 76, 163, 0.609), rgba(204, 0, 0, 0.829));
+    padding: 2%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.8em;
+  }
+/* O main abaixo é a caixa da criptografia (posição, tamanho e bordas)*/
+  .main {
+    position: absolute;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    top: 47%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    border-radius: 10%;
+    padding: 30px;
+  }
+/* O box abaixo é a caixa em volta da aplicação */
+  .box {
+    padding: 20px;
+    margin: 0 30px 0 1px;
+    background-color: rgba(0, 0, 0, 60%);
+    border-radius: 0.5em;
+    width: 30vw;
+    height: auto;
+  }
+/* O btn abaixo é a aplicação da criptografia (cores, borda e tamanhos) */
+  .btn {
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(45deg,rgba(148, 0, 0, 0.808), rgb(0, 119, 255));
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 0.5em;
+  }
+/* O btn hover é a mudança da cor quando passado pelo mouse */
+  .btn:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  .btn:active{
+    background-color: rgb(255, 0, 0);
+  }
+/* O text- input é a caixa de escrita (bordas, formato, tamanhos e cores) */
+  .text-input {
+    margin-top: 5%;
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 1vw;
+    width: 100%;
+    height: 50px;
+  }
+/* a id # input-texto é para controlar o tamanho da fonte no resultado da criptografia */
+  #input-texto {
+    font-size: 25px;
+  }
+/* a id # aqui é para controlar o tamanho da fonte no resultado da copia */
+  #aqui {
+    font-size: 25px;
+  }
+/* a classe . xd abaixo é o texto "Mensagem Criptografada" */
+  .xd {
+    background-image: linear-gradient(45deg, rgba(0, 76, 163, 0), rgba(8, 115, 255, 0.664));
+    text-align: center;
+    border-radius: 0.8em;
+    padding: 0.8%;
+  }
+/* a classe . po abaixo é o texto "Mensagem Descriptografar" */
+  .po {
+    font-size: 37px;
+    background-image: linear-gradient(45deg, rgba(0, 76, 163, 0), rgba(8, 115, 255, 0.644));
+    text-align: center;
+    border-radius: 0.8em;
+    padding: 0.8%;
+  }
+/* Abaixo são os botões (criptografar, descriptografar, limpar e copiar) */
+  #btn-cripto{
+    margin-right: center;
+    padding-left: 5%;
+  }
+  #btn-descripto{
+    margin-left: center;
+  }
+  #btn-copy{
+    margin-left: 25%;
+    width: 50%;
+  }
+  #btn-clean{
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  #msg{
+    font-size: 25px;
+  }
+  #input-texto{
+    font-size: 25px;
+  }
