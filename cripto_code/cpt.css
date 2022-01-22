@@ -115,7 +115,7 @@
   }
 /*...............................................................*/
   /*Abaixo o Design Responsivo da Pagina*/
-  @media (max-width: 1000px)
+  @media (width: 1000px)
 {
   .box,.btn,.main,.po,.text-input,.xd,h1{width: 100%; margin-left: auto;}
   body{background-image: linear-gradient(45deg,rgb(22, 131, 255), black);}
