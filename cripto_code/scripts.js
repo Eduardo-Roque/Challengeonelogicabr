@@ -1,22 +1,30 @@
-/* A Função abaixo serve para quando clicado no elemento "btn-cripto",
-   ele pega a variavel textoDecodifica com a id "input-texto"  e manda
-   para o valor msg */
-/*document.getElementById("btn-cripto").addEventListener("click", function () {
-
-    var textoCodificado = document.getElementById("input-texto").value;
-
-document.getElementById("msg").value = textoCodificado;
-});*/
-document.getElementById("btn-cripto").addEventListener("click", function () {
-    
-    var textoCodificado = document.getElementById("input-texto").value;
-    textoCodificado = textoCodificado.replaceAll('e', 'enter')
+function codificar(texto)
+{
+    texto = texto.replaceAll('e', 'enter')
                 .replaceAll('i', 'imes')
                 .replaceAll('a', 'ai')
                 .replaceAll('o', 'ober')
                 .replaceAll('u', 'ufat');
+    return texto;
+}
+function validarEntrada(entrada)
+{
+    var retorno = false;
+    if(entrada.toLowerCase() != entrada){
+        alert("é proibido usar Letras Maiusculas");
+        retorno = true;
 
-                document.getElementById("msg").value = textoCodificado;
+    }
+    return retorno;
+}
+document.getElementById("btn-cripto").addEventListener("click", function () {
+    
+    var textoCodificado = document.getElementById("input-texto").value;
+    if(validarEntrada(textoCodificado)){
+        return;
+    }
+
+    document.getElementById("msg").value = codificar(textoCodificado);
 })
 document.getElementById("btn-descripto").addEventListener("click", function () {
     
