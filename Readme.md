@@ -1,5 +1,5 @@
 # Challengeonelogicabr
- - Desafio da Arula do projeto Oracle One Next Education.
+ - Desafio da Alura do projeto Oracle One Next Education.
  - Criptografia.
 
 # :grin:
