@@ -20,6 +20,10 @@
     text-align: center;
     border-radius: 0.8em;
   }
+  .refe{
+    text-align: center;
+    margin-top: 34%;
+  }
 /* O main abaixo é a caixa da criptografia (posição, tamanho e bordas)*/
   .main {
     position: absolute;
@@ -29,7 +33,7 @@
     top: 47%;
     left: 60%;
     transform: translate(-50%,-50%);
-    border-radius: 10%;
+    border-radius: none;
     padding: 30px;
   }
 /* O box abaixo é a caixa em volta da aplicação */
@@ -107,6 +111,7 @@
     padding-left: 6%;
     padding-right: 6%;
   }
+/*Abaixo as caixas de texto*/
   #msg{
     font-size: 25px;
   }
@@ -115,8 +120,23 @@
   }
 /*...............................................................*/
   /*Abaixo o Design Responsivo da Pagina*/
-  @media (width: 1000px)
+  @media (max-width: 1000px)
 {
-  .box,.btn,.main,.po,.text-input,.xd,h1{width: 100%; margin-left: auto;}
-  body{background-image: linear-gradient(45deg,rgb(22, 131, 255), black);}
+  .box,.btn,.main,.po,.xd,h1{width: 100%; margin-left: auto;}
+  .box,.btn,.main,.po,.xd{margin-top: 5%;}
+}
+@media (max-width:1300px)
+{
+  .refe{display: none;}
+}
+@media (max-width: 500px)
+{
+   h1{width: 100%; margin-left: auto;}
+
+   .box{padding: 10px;margin: 0 1px 0 1px;}
+   
+   .po,.xd,.btn{width: 100%; font-size: 10px;}
+
+   #msg, #input-texto{font-size: 10px;}
+
 }
